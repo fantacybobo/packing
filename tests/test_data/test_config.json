@@ -1,0 +1,101 @@
+{
+  "models": {
+    "l_shape": {
+      "stl": "l_shape.stl",
+      "pose_count": 4
+    },
+    "t_shape": {
+      "stl": "t_shape.stl",
+      "pose_count": 3
+    },
+    "rectangle": {
+      "stl": "rectangle.stl",
+      "pose_count": 2
+    },
+    "cylinder": {
+      "stl": "cylinder.stl",
+      "pose_count": 2
+    },
+    "small_square": {
+      "stl": "small_square.stl",
+      "pose_count": 1
+    }
+  },
+  "packing_area": {
+    "x": [
+      -300,
+      300
+    ],
+    "y": [
+      -200,
+      200
+    ]
+  },
+  "margin": 2.0,
+  "test_scenarios": [
+    {
+      "name": "simple_two_shapes",
+      "model_ids": [
+        "l_shape",
+        "rectangle"
+      ],
+      "description": "Two simple shapes - L and rectangle"
+    },
+    {
+      "name": "concave_benefit",
+      "model_ids": [
+        "l_shape",
+        "l_shape",
+        "small_square",
+        "small_square"
+      ],
+      "description": "L-shapes create concave regions that small squares can fill"
+    },
+    {
+      "name": "mixed_shapes",
+      "model_ids": [
+        "l_shape",
+        "t_shape",
+        "rectangle",
+        "cylinder",
+        "small_square"
+      ],
+      "description": "Mix of different shapes"
+    },
+    {
+      "name": "many_parts",
+      "model_ids": [
+        "l_shape",
+        "l_shape",
+        "t_shape",
+        "t_shape",
+        "rectangle",
+        "rectangle",
+        "small_square",
+        "small_square",
+        "small_square",
+        "small_square"
+      ],
+      "description": "10 parts - stress test"
+    },
+    {
+      "name": "with_rotations",
+      "model_ids": [
+        "l_shape",
+        "l_shape",
+        "t_shape"
+      ],
+      "description": "Shapes with different rotations"
+    },
+    {
+      "name": "repeated_ids",
+      "model_ids": [
+        "l_shape",
+        "l_shape",
+        "l_shape",
+        "l_shape"
+      ],
+      "description": "Same model repeated - different pose samples"
+    }
+  ]
+}

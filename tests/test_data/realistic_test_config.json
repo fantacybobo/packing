@@ -1,0 +1,170 @@
+{
+  "models": {
+    "l_bracket_large": {
+      "stl": "l_bracket_large.stl",
+      "faces": 20480,
+      "size_mm": "200\u00d7200\u00d730",
+      "type": "L-bracket",
+      "pose_count": 5
+    },
+    "l_bracket_medium": {
+      "stl": "l_bracket_medium.stl",
+      "faces": 20480,
+      "size_mm": "100\u00d7100\u00d715",
+      "type": "L-bracket",
+      "pose_count": 5
+    },
+    "l_bracket_small": {
+      "stl": "l_bracket_small.stl",
+      "faces": 20480,
+      "size_mm": "40\u00d740\u00d76",
+      "type": "L-bracket",
+      "pose_count": 4
+    },
+    "flat_plate_large": {
+      "stl": "flat_plate_large.stl",
+      "faces": 12288,
+      "size_mm": "300\u00d7200\u00d75",
+      "type": "flat_plate",
+      "pose_count": 4
+    },
+    "flat_plate_medium": {
+      "stl": "flat_plate_medium.stl",
+      "faces": 12288,
+      "size_mm": "120\u00d780\u00d73",
+      "type": "flat_plate",
+      "pose_count": 4
+    },
+    "flat_plate_small": {
+      "stl": "flat_plate_small.stl",
+      "faces": 12288,
+      "size_mm": "50\u00d730\u00d72",
+      "type": "flat_plate",
+      "pose_count": 3
+    },
+    "bowl_ring_large": {
+      "stl": "bowl_ring_large.stl",
+      "faces": 32768,
+      "size_mm": "OD=300, ID=180, H=40",
+      "type": "bowl_ring",
+      "pose_count": 3
+    },
+    "bowl_ring_medium": {
+      "stl": "bowl_ring_medium.stl",
+      "faces": 32768,
+      "size_mm": "OD=120, ID=70, H=25",
+      "type": "bowl_ring",
+      "pose_count": 3
+    },
+    "t_bracket_medium": {
+      "stl": "t_bracket_medium.stl",
+      "faces": 28672,
+      "size_mm": "120\u00d7100\u00d715",
+      "type": "T-bracket",
+      "pose_count": 4
+    },
+    "cylinder_small": {
+      "stl": "cylinder_small.stl",
+      "faces": 12288,
+      "size_mm": "D=30, H=20",
+      "type": "cylinder",
+      "pose_count": 3
+    }
+  },
+  "packing_area": {
+    "x": [
+      -600,
+      600
+    ],
+    "y": [
+      -400,
+      400
+    ]
+  },
+  "margin": 2.0,
+  "test_scenarios": [
+    {
+      "name": "realistic_10_parts",
+      "model_ids": [
+        "l_bracket_large",
+        "l_bracket_medium",
+        "l_bracket_small",
+        "flat_plate_large",
+        "flat_plate_medium",
+        "flat_plate_small",
+        "bowl_ring_large",
+        "bowl_ring_medium",
+        "t_bracket_medium",
+        "cylinder_small"
+      ],
+      "description": "10 realistic parts (one of each type) - L, T, plate, bowl, cylinder"
+    },
+    {
+      "name": "realistic_15_parts",
+      "model_ids": [
+        "l_bracket_large",
+        "flat_plate_large",
+        "bowl_ring_large",
+        "l_bracket_medium",
+        "l_bracket_medium",
+        "flat_plate_medium",
+        "flat_plate_medium",
+        "bowl_ring_medium",
+        "t_bracket_medium",
+        "t_bracket_medium",
+        "l_bracket_small",
+        "l_bracket_small",
+        "flat_plate_small",
+        "flat_plate_small",
+        "cylinder_small"
+      ],
+      "description": "15 realistic parts - mix of large (3), medium (7), small (5)"
+    },
+    {
+      "name": "realistic_20_parts",
+      "model_ids": [
+        "l_bracket_large",
+        "l_bracket_large",
+        "flat_plate_large",
+        "bowl_ring_large",
+        "l_bracket_medium",
+        "l_bracket_medium",
+        "l_bracket_medium",
+        "flat_plate_medium",
+        "flat_plate_medium",
+        "flat_plate_medium",
+        "bowl_ring_medium",
+        "bowl_ring_medium",
+        "t_bracket_medium",
+        "t_bracket_medium",
+        "l_bracket_small",
+        "l_bracket_small",
+        "flat_plate_small",
+        "flat_plate_small",
+        "flat_plate_small",
+        "cylinder_small"
+      ],
+      "description": "20 realistic parts - large (4), medium (10), small (6)"
+    },
+    {
+      "name": "realistic_l_shape_heavy",
+      "model_ids": [
+        "l_bracket_large",
+        "l_bracket_large",
+        "l_bracket_medium",
+        "l_bracket_medium",
+        "l_bracket_medium",
+        "l_bracket_small",
+        "l_bracket_small",
+        "l_bracket_small",
+        "l_bracket_small",
+        "flat_plate_medium",
+        "flat_plate_small",
+        "flat_plate_small",
+        "cylinder_small",
+        "cylinder_small"
+      ],
+      "description": "14 parts - L-bracket heavy (best for concave packing demo)"
+    }
+  ]
+}
